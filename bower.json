@@ -1,0 +1,31 @@
+{
+  "name": "wakamole",
+  "version": "0.0.0",
+  "authors": [
+    "Cristian Casa <xthecapx@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "normalize-css": "latest",
+    "requirejs": "latest",
+    "react": "latest"
+  },
+  "install" : {
+    "path" : "public/libs",
+    "sources" : {
+      "jquery": "bower_components/jquery/dist/jquery.js",
+      "normalize-css": "bower_components/normalize-css/normalize.css",
+      "requirejs": "bower_components/requirejs/require.js",
+      "react": "bower_components/react/react.js"
+    }
+  }
+}

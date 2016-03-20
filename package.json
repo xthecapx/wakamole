@@ -1,0 +1,30 @@
+{
+  "name": "wakamole",
+  "version": "0.0.1",
+  "description": "javascript React Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server/bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xthecapx/wakamole.git"
+  },
+  "keywords": [
+    "wakamole",
+    "javascript",
+    "framework",
+    "frontend"
+  ],
+  "author": "Cristian Marquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xthecapx/wakamole/issues"
+  },
+  "homepage": "https://github.com/xthecapx/wakamole#readme",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  }
+}
