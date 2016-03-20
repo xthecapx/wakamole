@@ -25,7 +25,10 @@
       "jquery": "bower_components/jquery/dist/jquery.js",
       "normalize-css": "bower_components/normalize-css/normalize.css",
       "requirejs": "bower_components/requirejs/require.js",
-      "react": "bower_components/react/react.js"
+      "react": [
+        "bower_components/react/react.js",
+        "bower_components/react/react-dom.js"
+      ]
     }
   }
 }
