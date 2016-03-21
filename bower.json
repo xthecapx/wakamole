@@ -17,18 +17,20 @@
     "jquery": "latest",
     "normalize-css": "latest",
     "requirejs": "latest",
-    "react": "latest"
+    "react": "latest",
+    "marked-min": "^0.3.3"
   },
-  "install" : {
-    "path" : "public/libs",
-    "sources" : {
+  "install": {
+    "path": "public/libs",
+    "sources": {
       "jquery": "bower_components/jquery/dist/jquery.js",
       "normalize-css": "bower_components/normalize-css/normalize.css",
       "requirejs": "bower_components/requirejs/require.js",
       "react": [
         "bower_components/react/react.js",
         "bower_components/react/react-dom.js"
-      ]
+      ],
+      "marked-min": "bower_components/marked-min/marked.min.js"
     }
   }
 }
