@@ -1,4 +1,4 @@
-define(["jQuery", "react", "views"], function($, React, views) {
+define(["jQuery", "react", "clock"], function($, React, clock) {
   console.log("Welcome");
-  views.init();
+  clock.init();
 });

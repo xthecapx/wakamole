@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./server/bin/www",
-    "build": "babel public/components/**/clock.jsx -o public/components/views.js"
+    "compile": "for file in public/components/**/*.jsx; do babel \"$file\" -o \"${file%.*}.js\"; done;"
   },
   "repository": {
     "type": "git",
@@ -30,11 +30,12 @@
     ]
   },
   "devDependencies": {
-    "express": "^4.13.4",
-    "morgan": "^1.7.0",
     "babel-cli": "6.5.1",
     "babel-preset-es2015": "6.5.0",
     "babel-preset-react": "6.5.0",
-    "body-parser": "latest"
+    "body-parser": "latest",
+    "express": "^4.13.4",
+    "gulp-babel": "^6.1.2",
+    "morgan": "^1.7.0"
   }
 }

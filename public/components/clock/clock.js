@@ -6,15 +6,21 @@ define(["jQuery", "react", "reactDOM", "marked"], function ($, React, ReactDOM, 
       displayName: "Clock",
 
       getInitialState: function getInitialState() {
-        return { date: new Date(), id: 0 };
+        return {
+          date: new Date(),
+          id: 0
+        };
       },
       componentDidMount: function componentDidMount() {
         var state = this.state;
+
         state.id = setInterval(function () {
           var state = this.state;
+
           state.date = new Date();
           state.n = state.date.toDateString();
           state.time = state.date.toLocaleTimeString();
+
           this.setState(state);
         }.bind(this), 1000);
         this.setState(state);
